@@ -5,8 +5,8 @@ type UserCardProps = {
   users: User[]
 };
 
-const UserCard = (props: UserCardProps) => 
-  props.users.map((user, index) => (
+const UserCard = ({ users }: UserCardProps) => 
+  users.map((user, index) => (
     <View
       key={index}
       style={styles.card}
